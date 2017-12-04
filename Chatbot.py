@@ -24,7 +24,7 @@ class CThread(threading.Thread):
     def run(self):
         while not self.stopIt:
             msg = self.mrecv()
-            print 'recieved->  ',msg
+            print 'recieved->  ', + msg
 
 def setConn(con1,con2):
     dict={}
